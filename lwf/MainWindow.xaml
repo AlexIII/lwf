@@ -1,0 +1,29 @@
+﻿<Window x:Class="lwf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lwf"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+        Closed="Window_Closed"
+        Icon="lwf.ico"
+        Title="MainWindow" Height="159.6" Width="324.8">
+    <Grid Background="#FF686868">
+        <TextBox x:Name="ssidBox" Background="#FF959595" HorizontalAlignment="Left" Height="23" Margin="154,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+        <TextBox x:Name="keyBox" Background="#FF959595" HorizontalAlignment="Left" Height="23" Margin="154,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+        <Label x:Name="label" Content="SSID" HorizontalAlignment="Left" Margin="115,25,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Key" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="onOffButton" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Click="onOffButton_Click" Loaded="onOffButton_Loaded">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image  x:Name="wImg" Source="woff.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="statusLabel" HorizontalContentAlignment="Center" Content="Label" HorizontalAlignment="Left" Margin="0,95,0,10" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Button x:Name="aboutButton" Background="#FF959595" Content="About" HorizontalAlignment="Left" Margin="254,98,10,10" VerticalAlignment="Top" Width="47" Click="aboutButton_Click"/>
+    </Grid>
+</Window>
