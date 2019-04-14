@@ -3,6 +3,8 @@
 
 ### A windows tool that allows your PC to become a Wi-Fi access point when there's no active network connections.
 
+[Download link](https://github.com/AlexIII/lwf/releases/download/v1.0/Local.WLAN.exe)
+
 **Note: The program should be run as an administrator.** Otherwise it'll fail to setup access point.
 
 Windows 10 allows you to set up an access point via default network manager but only when there's another active network connection present. (e.g. wired) It makes sense since the AP is usually used to share internet connection via wi-fi to your other devices.
